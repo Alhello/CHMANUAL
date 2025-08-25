@@ -18,3 +18,12 @@ img {
     border-radius: 10px;
     background: linear-gradient(35deg, #f05151, #e6b140);
 }
+
+
+.changelog {
+    color: black;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    background: linear-gradient(35deg, #51f0d5, #38addb);
+}
