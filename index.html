@@ -27,6 +27,14 @@
                     Added more checks to prevent errors when using commands that require an integer<br>
                     Added new command addserverhost
             </li>
+            <li>
+                1.1.0: General update 1<br>
+                    Added command addslottype
+                    Added command forcejoin
+                    Compatible with self made roles
+                    Better checks with integers and strings as arguments for commands
+                    Bug fixes
+            </li>
         </ul>
     </div>
     <div class="command">
@@ -50,6 +58,13 @@
         <img src="img00.png" width=50%>
     </div>
     <div class="command">
+        <h3>!addslottype [collab name (do not add spaces)] [slot name (do not add spaces)] [amount of parts there are]</h3>
+        <p>This command can only be used by the host of the collab team the server creator has set.</p>
+        <p>Adds a new type of slot for your collab, defined my the client.</p>
+        <p>For example, the client can add a playtest slot for playtesters, or a merge slot for mergers.</p>
+        <p>This slot type will NOT BE COMPATIBLE WITH !edit COMMAND.</p>
+    </div>
+    <div class="command">
         <h3>!delete [collab name (do not add spaces)]</h3>
         <p>This command can only be used by the host of the collab team the server creator has set.</p>
         <p>Simply deletes the catergory and channel created by the bot.</p>
@@ -70,15 +85,21 @@
     <div class="command">
         <h3>!join [collab name (do not add spaces)] [type of part] [part number]</h3>
         <p>Lets a user join a collab.</p>
-        <p>The type of part can only be "gp" or "deco" in all lower case</p>
+        <p>The type of part can only be whatever the host has made and defined.</p>
         <p>If the collab is binary type, when the user has the gameplay / deco role they will immediately join.</p>
-        <p>If the collab is tier type, when the user has a gameplay / deco role higher than the standard then they will join.</p>
+        <p>If the collab is tier type, when the user has a role higher than the standard then they will join.</p>
         <p>The user can only join 2 parts per collabs.</p>
+    </div>
+    <div class="command">
+        <h3>!forcejoin [collab name (do not add spaces)] [type of part] [part number]</h3>
+        <p>This command can only be used by the host of the collab team the server creator has set OR the collab host.</p>
+        <p>Forcefully lets a user join a collab, whether the user is under/without the role needed normally.</p>
+        <p>The amount of parts a user a join is not ignored.</p>
     </div>
     <div class="command">
         <h3>!quit [collab name (do not add spaces)] [type of part] [part number]</h3>
         <p>Lets a user quit a collab.</p>
-        <p>The type of part can only be "gp" or "deco" in all lower case</p>
+        <p>The type of part can only be whatever the host has made and defined.</p>
         <p>Upon quiting, they cannot join the collab again.</p>
     </div>
     <div class="command">
@@ -114,6 +135,7 @@
 </body>
 
 </htm
+
 
 
 
